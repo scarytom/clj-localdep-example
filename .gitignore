@@ -1,6 +1,6 @@
 *~
 *.swp
-*.jar
+/*.jar
 /pom.xml
 /.settings/ccw.repl.cmdhistory.prefs
 /.lein-deps-sum

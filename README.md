@@ -1,9 +1,14 @@
-# foo
+# clj-localdep-example
 
-A Clojure library designed to ... well, that part is up to you.
+A dummy Clojure project designed to demonstrate building with locally checked-in binary dependencies.
+
+## Prerequisites
+
+Works with Leiningen v2+ and Maven v3+
 
 ## Local Maven Repo
-Adding jars to the local maven repo in `vendor/mvn`
+
+Adding jars to the local maven repo in `vendor/mvn` is as simple as running this:
 
 ```bash
 mvn --debug deploy:deploy-file -Dfile=/full/path/to/dummy.jar -DartifactId=dummy -Dversion=1.0.0 -DgroupId=com.scarytom.test -Dpackaging=jar -Durl=file:vendor/mvn
@@ -11,10 +16,12 @@ mvn --debug deploy:deploy-file -Dfile=/full/path/to/dummy.jar -DartifactId=dummy
 
 ## Usage
 
-FIXME
+```bash
+lein deps
+```
 
 ## License
 
-Copyright © 2012 FIXME
+Copyright © 2012 Tom Denley
 
 Distributed under the Eclipse Public License, the same as Clojure.

@@ -20,6 +20,16 @@ mvn deploy:deploy-file -Dfile=/full/path/to/dummy.jar -DartifactId=dummy -Dversi
 lein deps
 ```
 
+Output:
+```bash
+Retrieving com/scarytom/test/dummy/1.0.0/dummy-1.0.0.pom (1k)
+    from file:/tmp/clj-localdep-example/vendor/mvn/
+Could not find artifact com.scarytom.test:dummy:jar:1.0.0 in central (http://repo1.maven.org/maven2)
+Could not find artifact com.scarytom.test:dummy:jar:1.0.0 in clojars (http://clojars.org/repo/)
+Retrieving com/scarytom/test/dummy/1.0.0/dummy-1.0.0.jar (1k)
+    from file:/tmp/clj-localdep-example/vendor/mvn/
+```
+
 ## License
 
 Copyright © 2012 Tom Denley

@@ -11,7 +11,7 @@ Works with Leiningen v2+ and Maven v3+
 Adding jars to the local maven repo in `vendor/mvn` is as simple as running this:
 
 ```bash
-mvn --debug deploy:deploy-file -Dfile=/full/path/to/dummy.jar -DartifactId=dummy -Dversion=1.0.0 -DgroupId=com.scarytom.test -Dpackaging=jar -Durl=file:vendor/mvn
+mvn deploy:deploy-file -Dfile=/full/path/to/dummy.jar -DartifactId=dummy -Dversion=1.0.0 -DgroupId=com.scarytom.test -Dpackaging=jar -Durl=file:vendor/mvn
 ```
 
 ## Usage
